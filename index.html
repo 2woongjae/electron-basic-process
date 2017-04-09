@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn_process">process</button>
+
+<script>
+    const btn_process = document.querySelector('#btn_process');
+
+    btn_process.addEventListener('click', () => {
+        console.log(`process.type : ${process.type}`);
+        console.log(`process.versions : ${JSON.stringify(process.versions)}`);
+        console.log(`process.versions.electron : ${process.versions.electron}`);
+        console.log(`process.versions.chrome : ${process.versions.chrome}`);
+        console.log(`process.versions.node : ${process.versions.node}`);
+
+        console.log(`process.mas : ${process.mas}`);
+        console.log(`process.windowsStore : ${process.windowsStore}`);
+        console.log(`process.defaultApp : ${process.defaultApp}`);
+    });
+</script>
+</body>
+</html>
